@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вантажні перевезення для бізнесу Україною та в Європу — Вантажна логістика</title>
+  <meta name="description" content="Організовуємо автомобільні вантажні перевезення для бізнесу Україною та на маршрутах між Україною і країнами Європи: окремі машини й збірні вантажі. Запросіть розрахунок вартості перевезення.">
+  <meta name="theme-color" content="#171717">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="uk_UA">
+  <meta property="og:title" content="Вантажні перевезення для бізнесу">
+  <meta property="og:description" content="Автомобільні перевезення Україною та між Україною і країнами Європи. Запросіть розрахунок перевезення.">
+  <meta property="og:image" content="assets/hero.jpg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap">
+  <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до змісту</a>
+
+  <!-- ============ 1. Шапка ============ -->
+  <header class="site-header" data-header>
+    <div class="container site-header__inner">
+      <a class="brand" href="#top" aria-label="Вантажна логістика — на початок сторінки">
+        <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect x="1" y="1" width="30" height="30" rx="6" />
+          <path d="M8 20.5h11.5M15.5 16.5l4 4-4 4M24 11.5H12.5M16.5 7.5l-4 4 4 4" />
+        </svg>
+        <span class="brand__name" data-brand>Вантажна логістика</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основна навігація">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-nav-toggle>
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+          <span class="nav-toggle__label">Меню</span>
+        </button>
+        <div class="site-menu" id="site-menu" data-nav-menu>
+          <ul class="site-menu__list">
+            <li><a href="#services">Послуги</a></li>
+            <li><a href="#about">Про нас</a></li>
+            <li><a href="#process">Як працюємо</a></li>
+            <li><a href="#geography">Географія</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+          </ul>
+          <a class="site-menu__phone" href="#" data-contact="phone" hidden></a>
+          <a class="btn btn--primary site-menu__cta" href="#quote">Запросити розрахунок</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ 2. Перший екран ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img src="assets/hero.jpg" width="1672" height="941" alt="Вантажівка з напівпричепом заїжджає до рампи вантажного термінала" fetchpriority="high" decoding="async">
+      </div>
+      <p class="hero__watermark" aria-hidden="true">UA&nbsp;↔&nbsp;EU</p>
+
+      <div class="container hero__inner">
+        <p class="eyebrow eyebrow--on-dark hero__eyebrow">
+          <span class="route-dot" aria-hidden="true"></span>
+          Україна · Україна ↔ Європа
+        </p>
+        <h1 class="hero__title" id="hero-title">Вантажні перевезення <span class="accent">для бізнесу</span></h1>
+        <p class="hero__lead">Організовуємо автомобільні перевезення Україною та на маршрутах між Україною і країнами Європи. Розкажіть, звідки забрати вантаж, куди його доставити і коли він буде готовий. Підберемо варіант і погодимо вартість та терміни.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--lg" href="#quote">
+            Запросити розрахунок
+            <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+          </a>
+          <a class="btn btn--ghost-light btn--lg" href="#services">Переглянути послуги</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. Послуги ============ -->
+    <section class="section section--light services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Послуги</p>
+            <h2 class="h2" id="services-title">Перевезення під ваш <span class="accent">маршрут</span> і вантаж</h2>
+          </div>
+        </div>
+
+        <ul class="service-grid" role="list">
+          <li class="service-card">
+            <figure class="media media--service media--focus-ukraine">
+              <img src="assets/service-ukraine.jpg" width="1400" height="788" loading="lazy" decoding="async" alt="Вантажівка на трасі серед полів в Україні">
+            </figure>
+            <div class="service-card__body">
+              <span class="service-card__index" aria-hidden="true">01</span>
+              <h3 class="h3">Перевезення Україною</h3>
+              <p>Для доставок між складами, магазинами й виробничими майданчиками. Вкажіть міста завантаження та доставки, щоб погодити маршрут.</p>
+              <a class="btn btn--outline service-card__cta" href="#quote" data-service="ukraine">
+                Запросити розрахунок
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+              </a>
+            </div>
+          </li>
+          <li class="service-card">
+            <figure class="media media--service media--focus-international">
+              <img src="assets/service-international.jpg" width="1400" height="788" loading="lazy" decoding="async" alt="Тягач із напівпричепом на європейській автомагістралі">
+            </figure>
+            <div class="service-card__body">
+              <span class="service-card__index" aria-hidden="true">02</span>
+              <h3 class="h3">Міжнародні автомобільні перевезення</h3>
+              <p>Для відправлень між Україною і країнами Європи. Під час розрахунку уточнюємо маршрут, параметри вантажу та умови завантаження.</p>
+              <a class="btn btn--outline service-card__cta" href="#quote" data-service="international">
+                Запросити розрахунок
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+              </a>
+            </div>
+          </li>
+          <li class="service-card">
+            <figure class="media media--service media--focus-groupage">
+              <img src="assets/service-groupage.jpg" width="1400" height="788" loading="lazy" decoding="async" alt="Завантаження палет різного розміру в напівпричіп на складі">
+            </figure>
+            <div class="service-card__body">
+              <span class="service-card__index" aria-hidden="true">03</span>
+              <h3 class="h3">Перевезення збірних вантажів</h3>
+              <p>Для відправлень, яким не потрібна окрема машина. Вкажіть кількість місць, вагу й габарити, щоб уточнити доступність цього варіанта на вашому маршруті.</p>
+              <a class="btn btn--outline service-card__cta" href="#quote" data-service="groupage">
+                Запросити розрахунок
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ 4. Заклик після послуг ============ -->
+    <section class="section section--light section--tight cta-band-wrap" aria-labelledby="cta-services-title">
+      <div class="container">
+        <div class="cta-band">
+          <figure class="media media--cta">
+            <img src="assets/cta.jpg" width="1400" height="788" loading="lazy" decoding="async" alt="Ряд освітлених рамп вантажного термінала з напівпричепами">
+          </figure>
+          <div class="cta-band__body">
+            <h2 class="h2 h2--on-dark" id="cta-services-title">Потрібно перевезти <span class="accent">вантаж?</span></h2>
+            <p>Напишіть, звідки забрати вантаж, куди його доставити і коли він буде готовий. Цих даних достатньо, щоб почати розрахунок.</p>
+            <a class="btn btn--primary btn--lg" href="#quote">
+              Запросити розрахунок
+              <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. Про нас ============ -->
+    <section class="section section--light about" id="about" aria-labelledby="about-title">
+      <div class="container about__grid">
+        <figure class="media media--about">
+          <img src="assets/about.jpg" width="1024" height="1536" loading="lazy" decoding="async" alt="Координаторка перевезень перевіряє дані вантажу біля напівпричепа на рампі">
+        </figure>
+        <div class="about__body">
+          <p class="eyebrow">Про нас</p>
+          <h2 class="h2" id="about-title">Вантажні перевезення <span class="accent">для компаній</span></h2>
+          <p class="about__lead">Допомагаємо бізнесу організувати доставку між складами, магазинами й виробничими майданчиками.</p>
+          <p>Перед завантаженням уточнюємо маршрут, параметри вантажу й умови доставки. Під час перевезення повідомляємо статус за погодженим каналом зв’язку.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. Процес роботи ============ -->
+    <section class="section section--tint process" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Процес роботи</p>
+          <h2 class="h2" id="process-title">Як <span class="accent">працюємо</span></h2>
+        </div>
+        <ol class="steps" role="list">
+          <li class="step">
+            <span class="step__num" aria-hidden="true">01</span>
+            <h3 class="h3">Отримуємо параметри вантажу</h3>
+            <p>Ви надсилаєте маршрут, опис вантажу та бажану дату. Якщо бракує даних, уточнюємо їх перед розрахунком.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">02</span>
+            <h3 class="h3">Підбираємо перевезення</h3>
+            <p>Пропонуємо варіант з урахуванням вантажу, строків і умов завантаження.</p>
+          </li>
+          <li class="step">
+            <span class="step__num" aria-hidden="true">03</span>
+            <h3 class="h3">Погоджуємо умови</h3>
+            <p>Узгоджуємо вартість, точки маршруту, орієнтовні строки й спосіб зв’язку під час перевезення.</p>
+          </li>
+          <li class="step step--dark">
+            <span class="step__num" aria-hidden="true">04</span>
+            <h3 class="h3">Організовуємо доставку</h3>
+            <p>Передаємо статуси за погодженим каналом зв’язку й повідомляємо після доставки.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 7. Заклик після процесу роботи ============ -->
+    <section class="section section--tint section--flush-top" aria-labelledby="cta-process-title">
+      <div class="container">
+        <div class="cta-accent">
+          <div class="cta-accent__text">
+            <h2 class="h2" id="cta-process-title">Маєте маршрут і бажану дату?</h2>
+            <p>Надішліть дані про вантаж. Уточнимо деталі й підберемо варіант перевезення.</p>
+          </div>
+          <a class="btn btn--dark btn--lg" href="#quote">
+            Обговорити перевезення
+            <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. Відгуки Google ============ -->
+    <section class="section section--light reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Відгуки</p>
+          <h2 class="h2" id="reviews-title">Відгуки клієнтів <span class="accent">у Google</span></h2>
+        </div>
+
+        <div class="reviews__panel" data-reviews>
+          <!-- Місце для віджета Google Business Profile: вставте код у [data-reviews-widget] -->
+          <div class="reviews__widget" data-reviews-widget hidden></div>
+
+          <!-- Службовий стан для локального перегляду. Прибрати перед публікацією. -->
+          <div class="reviews__placeholder" data-reviews-placeholder>
+            <svg class="reviews__stars" viewBox="0 0 120 20" aria-hidden="true" focusable="false">
+              <g><path d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/><path transform="translate(25 0)" d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/><path transform="translate(50 0)" d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/><path transform="translate(75 0)" d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/><path transform="translate(100 0)" d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.9L10 14.9l-5.2 2.8 1-5.9L1.5 7.7l5.9-.8z"/></g>
+            </svg>
+            <p>Відгуки з Google з’являться після підключення профілю компанії.</p>
+          </div>
+
+          <a class="btn btn--outline" href="#" target="_blank" rel="noopener" data-reviews-link hidden>
+            Читати відгуки в Google
+            <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 9. Часті запитання ============ -->
+    <section class="section section--tint faq" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <div class="faq__head">
+          <p class="eyebrow">Питання</p>
+          <h2 class="h2" id="faq-title">Часті <span class="accent">запитання</span></h2>
+        </div>
+        <div class="faq__list">
+          <details class="faq-item">
+            <summary><span>Яку інформацію вказати для розрахунку?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <p>Потрібні міста завантаження й доставки та короткий опис вантажу. Якщо вже відомі дата, вага, габарити та кількість місць, додайте їх до заявки.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span>Що робити, якщо точні габарити ще невідомі?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <p>Вкажіть, що перевозите, і додайте приблизні дані. Уточнимо параметри, потрібні для підбору транспорту.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span>Від чого залежить вартість?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <p>Від маршруту, дати, параметрів вантажу, типу транспорту та умов завантаження й доставки.</p>
+          </details>
+          <details class="faq-item">
+            <summary><span>Коли можна дізнатися термін доставки?</span><span class="faq-item__icon" aria-hidden="true"></span></summary>
+            <p>Орієнтовний термін повідомимо після уточнення маршруту й вантажу. Дати погоджуємо перед підтвердженням перевезення.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10. Карта й географія ============ -->
+    <section class="section section--light geo" id="geography" aria-labelledby="geo-title">
+      <div class="container geo__grid">
+        <div class="geo__text">
+          <p class="eyebrow">Географія</p>
+          <h2 class="h2" id="geo-title">Куди <span class="accent">доставляємо</span></h2>
+          <ul class="geo__list" role="list">
+            <li class="geo-route">
+              <span class="geo-route__marker geo-route__marker--domestic" aria-hidden="true"></span>
+              <div>
+                <h3 class="h3">Україна</h3>
+                <p>Передайте міста завантаження та доставки. За потреби додайте проміжні точки.</p>
+              </div>
+            </li>
+            <li class="geo-route">
+              <span class="geo-route__marker geo-route__marker--intl" aria-hidden="true"></span>
+              <div>
+                <h3 class="h3">Україна ↔ Європа</h3>
+                <p>Вкажіть країну й місто для обох точок маршруту. За цими даними уточнимо можливість перевезення та орієнтовні строки.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <figure class="geo__map">
+          <svg class="route-map" viewBox="20 78 610 216" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Схема напрямів перевезень</title>
+            <desc id="map-desc">Схематична карта: перевезення в межах України та в обох напрямках між Україною і країнами Європи.</desc>
+            <defs>
+              <pattern id="dots" width="12" height="12" patternUnits="userSpaceOnUse">
+                <circle cx="6" cy="6" r="1.9" />
+              </pattern>
+              <radialGradient id="fade">
+                <stop offset="0" stop-color="#fff" stop-opacity="1" />
+                <stop offset=".55" stop-color="#fff" stop-opacity=".85" />
+                <stop offset="1" stop-color="#fff" stop-opacity="0" />
+              </radialGradient>
+              <mask id="europe-mask">
+                <ellipse cx="185" cy="178" rx="200" ry="112" fill="url(#fade)" />
+              </mask>
+              <marker id="arrow-blue" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M1 1 9 5 1 9z" class="route-map__arrowhead" />
+              </marker>
+            </defs>
+
+            <rect class="route-map__europe" x="0" y="40" width="640" height="270" fill="url(#dots)" mask="url(#europe-mask)" />
+            <text class="route-map__label route-map__label--muted" x="92" y="183">Європа</text>
+
+            <polygon class="route-map__ua" points="348.6,189.2 356.5,176.0 355.1,163.9 368.0,146.3 376.7,135.3 369.5,119.9 381.0,112.2 399.8,111.1 418.6,117.7 435.9,118.8 451.8,123.2 469.8,126.5 474.9,108.9 487.8,107.8 496.5,103.4 509.5,102.3 521.0,116.6 525.4,126.5 539.8,140.8 549.9,145.2 568.7,145.2 577.3,155.1 594.7,157.3 607.6,162.8 606.2,176.0 601.9,184.8 603.3,201.3 588.9,202.4 580.9,217.8 568.7,221.1 560.0,226.6 545.6,228.8 534.0,236.5 541.2,251.9 557.1,255.2 539.8,264.0 525.4,272.8 512.4,273.9 497.9,256.3 513.8,244.2 509.5,239.8 487.8,235.4 473.4,229.9 464.8,245.3 457.5,258.5 443.8,257.4 436.6,253.0 446.7,242.0 463.3,233.2 456.1,222.2 450.3,210.1 453.2,199.1 443.1,194.7 427.2,188.1 412.8,191.4 389.7,202.4 369.5,199.1 358.7,199.1" />
+            <text class="route-map__label" x="398" y="187">Україна</text>
+
+            <!-- Внутрішні маршрути: схематично, без конкретних точок -->
+            <path class="route-map__line route-map__line--domestic" d="M384 160 C 420 130, 470 128, 505 150" />
+            <path class="route-map__line route-map__line--domestic" d="M505 150 C 540 165, 560 190, 548 210" />
+            <path class="route-map__line route-map__line--domestic" d="M505 150 C 498 185, 488 205, 478 222" />
+            <circle class="route-map__node" cx="384" cy="160" r="4.5" />
+            <circle class="route-map__node" cx="505" cy="150" r="5.5" />
+            <circle class="route-map__node" cx="548" cy="210" r="4.5" />
+            <circle class="route-map__node" cx="478" cy="222" r="4.5" />
+
+            <!-- Україна ↔ Європа: двонапрямні маршрути -->
+            <path class="route-map__line route-map__line--intl" d="M372 148 C 310 100, 230 98, 160 130" marker-start="url(#arrow-blue)" marker-end="url(#arrow-blue)" />
+            <path class="route-map__line route-map__line--intl" d="M360 188 C 300 222, 240 232, 180 218" marker-start="url(#arrow-blue)" marker-end="url(#arrow-blue)" />
+          </svg>
+          <figcaption class="geo__caption">
+            <span><i class="legend legend--domestic" aria-hidden="true"></i>Україна</span>
+            <span><i class="legend legend--intl" aria-hidden="true"></i>Україна ↔ Європа</span>
+            <span class="geo__note">Схема без масштабу</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ 11. Контакти й форма ============ -->
+    <section class="section section--dark contacts" id="contacts" aria-labelledby="contacts-title">
+      <div class="container contacts__grid">
+        <div class="contacts__intro">
+          <p class="eyebrow eyebrow--on-dark">Контакти</p>
+          <h2 class="h2 h2--on-dark" id="contacts-title">Запросити розрахунок <span class="accent">перевезення</span></h2>
+          <p class="contacts__lead">Заповніть маршрут, коротко опишіть вантаж і залиште телефон або email для відповіді.</p>
+
+          <ul class="contact-list" role="list" data-contact-list hidden>
+            <li data-contact-item="phone" hidden>
+              <span class="contact-list__label">Телефон</span>
+              <a href="#" data-contact="phone"></a>
+            </li>
+            <li data-contact-item="email" hidden>
+              <span class="contact-list__label">Email</span>
+              <a href="#" data-contact="email"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="quote-card" id="quote" tabindex="-1">
+          <div class="quote-card__head">
+            <p class="quote-card__title">Заявка на розрахунок</p>
+            <span class="badge" data-demo-badge>Демоверсія форми</span>
+          </div>
+
+          <form class="quote-form" data-quote-form novalidate>
+            <p class="quote-form__legend"><span class="req" aria-hidden="true">*</span> — обов’язкові поля</p>
+
+            <div class="field">
+              <label for="f-name">Ім’я контактної особи <span class="req" aria-hidden="true">*</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err" data-error-for="f-name"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-company">Компанія</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+
+            <fieldset class="field-group">
+              <legend>Контакт для відповіді <span class="req" aria-hidden="true">*</span></legend>
+              <p class="field__hint" id="contact-hint">Достатньо вказати телефон або email.</p>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-phone">Телефон</label>
+                  <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+380" aria-describedby="contact-hint contact-err f-phone-err">
+                  <p class="field__error" id="f-phone-err" data-error-for="f-phone"></p>
+                </div>
+                <div class="field">
+                  <label for="f-email">Email</label>
+                  <input id="f-email" name="email" type="email" inputmode="email" autocomplete="email" aria-describedby="contact-hint contact-err f-email-err">
+                  <p class="field__error" id="f-email-err" data-error-for="f-email"></p>
+                </div>
+              </div>
+              <p class="field__error field-group__error" id="contact-err"></p>
+            </fieldset>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-from">Звідки забрати <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-from" name="from" type="text" placeholder="Місто, країна" required aria-describedby="f-from-err">
+                <p class="field__error" id="f-from-err" data-error-for="f-from"></p>
+              </div>
+              <div class="field">
+                <label for="f-to">Куди доставити <span class="req" aria-hidden="true">*</span></label>
+                <input id="f-to" name="to" type="text" placeholder="Місто, країна" required aria-describedby="f-to-err">
+                <p class="field__error" id="f-to-err" data-error-for="f-to"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="f-service">Тип перевезення</label>
+                <div class="select">
+                  <select id="f-service" name="service">
+                    <option value="">Оберіть варіант</option>
+                    <option value="ukraine">Перевезення Україною</option>
+                    <option value="international">Міжнародні автомобільні перевезення</option>
+                    <option value="groupage">Перевезення збірних вантажів</option>
+                    <option value="consultation">Потрібна консультація</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-date">Бажана дата завантаження</label>
+                <input id="f-date" name="date" type="date">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="f-cargo">Вантаж <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="f-cargo" name="cargo" rows="3" required aria-describedby="f-cargo-hint f-cargo-err"></textarea>
+              <p class="field__hint" id="f-cargo-hint">Коротко опишіть, що перевозите. Вагу, габарити й кількість місць додайте, якщо вони відомі.</p>
+              <p class="field__error" id="f-cargo-err" data-error-for="f-cargo"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-comment">Коментар</label>
+              <textarea id="f-comment" name="comment" rows="2" aria-describedby="f-comment-hint"></textarea>
+              <p class="field__hint" id="f-comment-hint">Можна уточнити вимоги до завантаження або доставки.</p>
+            </div>
+
+            <div class="quote-form__footer">
+              <button class="btn btn--primary btn--lg btn--block" type="submit" data-submit>
+                <span data-submit-label>Надіслати запит</span>
+                <svg class="btn__arrow" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 12 12 4M5.5 4H12v6.5" /></svg>
+              </button>
+              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Футер ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="#top" aria-label="Вантажна логістика — на початок сторінки">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <rect x="1" y="1" width="30" height="30" rx="6" />
+            <path d="M8 20.5h11.5M15.5 16.5l4 4-4 4M24 11.5H12.5M16.5 7.5l-4 4 4 4" />
+          </svg>
+          <span class="brand__name" data-brand>Вантажна логістика</span>
+        </a>
+        <p>Автомобільні вантажні перевезення Україною та між Україною і країнами Європи.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Навігація у футері">
+        <ul role="list">
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#process">Як працюємо</a></li>
+          <li><a href="#geography">Географія</a></li>
+          <li><a href="#contacts">Контакти</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__contacts" data-footer-contacts hidden>
+        <a href="#" data-contact="phone" hidden></a>
+        <a href="#" data-contact="email" hidden></a>
+      </div>
+    </div>
+    <div class="container site-footer__bottom">
+      <p>© <span data-year>2026</span> <span data-brand>Вантажна логістика</span></p>
+      <a class="site-footer__top" href="#top">Нагору</a>
+    </div>
+  </footer>
+</body>
+</html>

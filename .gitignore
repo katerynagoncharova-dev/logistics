@@ -1,0 +1,16 @@
+# Allow-list: only website files go into the repo.
+/*
+!/.gitignore
+!/index.html
+!/styles.css
+!/script.js
+!/serve.mjs
+!/README.md
+!/assets/
+!/tools/
+
+# Never commit
+.env
+.env.*
+.DS_Store
+/assets/source/
