@@ -16,7 +16,7 @@ const SITE_CONFIG = {
   socials: [], // напр. [{ label: 'Instagram', url: 'https://…' }]
   policies: [], // напр. [{ label: 'Політика конфіденційності', url: '/privacy' }]
   formEndpoint: '', // URL сервісу заявок (POST, JSON). Порожньо → демоверсія
-  sampleReviews: true, // зразки відгуків для макета — показуються ЛИШЕ на localhost
+  sampleReviews: true, // картки-приклади (позначені «Приклад»), доки не підключено Google-профіль
   sampleContacts: true, // тимчасові контакти для макета — показуються ЛИШЕ на localhost
 };
 
@@ -44,8 +44,8 @@ function trackQuoteConversion(payload) {
 
 /**
  * ЗРАЗКИ ВІДГУКІВ ДЛЯ МАКЕТА. Вигадані тексти й імена, нейтральні аватари — не справжні люди.
- * Рендеряться тільки на localhost (див. renderSampleReviews), на опублікованому сайті — ніколи.
- * Для живого сайту підключіть Google Business Profile (googleReviewsUrl або віджет).
+ * Показуються на сайті як позначені приклади, доки не задано googleReviewsUrl.
+ * Без оцінки Google і без позначки Google — це не справжні відгуки.
  */
 const SAMPLE_REVIEWS = [
   { name: 'Тарас Мельничук', text: 'Швидко порахували вартість перевезення палет зі складу в Києві до магазину у Львові, погодили дату й тримали в курсі статусу до самої доставки.' },
@@ -154,7 +154,7 @@ function applyConfig() {
 /* ---------- Зразки відгуків (тільки локальний перегляд) ---------- */
 function renderSampleReviews() {
   const grid = $('[data-reviews-grid]');
-  if (!grid || !SITE_CONFIG.sampleReviews || !IS_LOCAL_PREVIEW) return;
+  if (!grid || !SITE_CONFIG.sampleReviews || SITE_CONFIG.googleReviewsUrl) return;
 
   const starsSvg = () => {
     const ns = 'http://www.w3.org/2000/svg';
@@ -183,9 +183,9 @@ function renderSampleReviews() {
     const head = el('div', 'review-card__head');
     head.append(el('span', 'review-card__avatar'), el('p', 'review-card__name', r.name));
     const foot = el('div', 'review-card__foot');
-    const rating = el('span', 'visually-hidden', 'Оцінка 5 з 5');
+    const rating = el('span', 'visually-hidden', 'Приклад оцінки');
     const mark = el('span', 'review-card__source');
-    mark.append(el('span', 'review-card__source-name', 'Google'), el('span', 'review-card__source-sub', 'відгук · зразок'));
+    mark.append(el('span', 'review-card__source-name', 'Приклад'), el('span', 'review-card__source-sub', 'не справжній відгук'));
     foot.append(starsSvg(), rating, mark);
     inner.append(head, el('p', 'review-card__text', r.text), foot);
     li.append(inner);
@@ -196,12 +196,6 @@ function renderSampleReviews() {
   $('[data-reviews-badges]').hidden = false;
   const placeholder = $('[data-reviews-placeholder]');
   if (placeholder) placeholder.hidden = true;
-  const link = $('[data-reviews-link]');
-  if (link && !SITE_CONFIG.googleReviewsUrl) {
-    link.href = '#reviews';
-    link.removeAttribute('target');
-    link.hidden = false;
-  }
 }
 
 /* ---------- Шапка й мобільне меню ---------- */
